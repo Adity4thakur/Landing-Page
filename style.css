@@ -1,0 +1,149 @@
+* {
+    /* 
+     */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: #ebebeb; */
+
+}
+
+#left {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+
+}
+
+#lnav {
+    display: flex;
+    justify-content: Space-between;
+    width: 100%;
+    padding: 20px 30px;
+
+}
+
+#lnavr {
+    display: flex;
+    align-items: center;
+}
+
+#lnavr a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+#lnavr i {
+    color: aquamarine;
+}
+
+#left #textcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#textcenter h1 {
+    font-size: 90px;
+    font-weight: 600;
+    color: #333;
+}
+
+#textcenter a {
+    text-decoration: none;
+    color: #b0bd5ddf;
+    border-bottom: 1px solid #204f54a4;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+#textcenter p {
+    opacity: 0.7;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+
+}
+
+
+#right {
+    width: 60%;
+    height: 100%;
+    background-color: crimson;
+}
+
+#rtop {
+    display: flex;
+    /* this is the key  line number 56  50 */
+    width: 100%;
+    height: 50%;
+    background-color: darkcyan;
+}
+
+#rbottom {
+    width: 100%;
+    height: 50%;
+    /* background-color: darkgoldenrod; */
+    background-image: url(https://media.istockphoto.com/id/1372005890/video/4k-video-footage-of-a-young-woman-using-a-digital-tablet-while-inspecting-crops-on-a-farm.jpg?s=640x640&k=20&c=2jWYhnAg5inYWBASOXiRLQ_-1qBOFF1T1-org-zE0L8=);
+    background-position: center;
+    background-size: cover;
+}
+
+#rtopleft {
+    width: 50%;
+    height: 100%;
+    /* background-color: darkgreen; */
+    background-image: url(https://media.istockphoto.com/id/1840650286/video/orange-trees.jpg?s=640x640&k=20&c=bPD8MR3o3_80N-vhog65n925A-oukceFccMXr4U3oiE=);
+    background-position: center;
+    background-size: cover;
+}
+
+#rtopright {
+    width: 50%;
+    height: 100%;
+    /* background-color: darkmagenta; */
+    background-image: url(https://media.istockphoto.com/id/1432476739/photo/golden-barrel-cactus-growing-in-pots-at-a-flower-nursery-uttarakhand-india.jpg?s=2048x2048&w=is&k=20&c=J3vmiIZkCXfGQiNx7g8Q-HrCSBIYBSjhsneKnw-88rk=);
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* media query adgust the screen for every device */
+
+@media(max-width: 600px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #left #main {
+        width: 100%;
+    }
+
+    #main #right {
+        width: 100%;
+    }
+}
